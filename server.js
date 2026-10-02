@@ -1,36 +1,36 @@
 const express = require('express');
+const path = require('path');
 const db = require('./db');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
-// Serve static frontend files from the 'public' folder
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
-// API Endpoint: GET /api/jobs
+// REST API endpoint with search & category filtering
 app.get('/api/jobs', (req, res) => {
+  const { search, category } = req.query;
+
+  let query = 'SELECT id, title, company, link, source, category, tags, scraped_at FROM jobs WHERE 1=1';
+  const params = [];
+
+  if (search) {
+    query += ' AND (title LIKE ? OR company LIKE ? OR description LIKE ?)';
+    params.push(`%${search}%`, `%${search}%`, `%${search}%`);
+  }
+
+  if (category) {
+    query += ' AND category = ?';
+    params.push(category);
+  }
+
+  query += ' ORDER BY scraped_at DESC';
+
   try {
-    const { search } = req.query;
-
-    let query = 'SELECT * FROM jobs ORDER BY id DESC';
-    let jobs;
-
-    if (search) {
-      query = 'SELECT * FROM jobs WHERE title LIKE ? OR company LIKE ? ORDER BY id DESC';
-      const searchPattern = `%${search}%`;
-      jobs = db.prepare(query).all(searchPattern, searchPattern);
-    } else {
-      jobs = db.prepare(query).all();
-    }
-
-    res.json({
-      success: true,
-      count: jobs.length,
-      data: jobs,
-    });
+    const jobs = db.prepare(query).all(...params);
+    res.json(jobs);
   } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ error: error.message });
   }
 });
 
