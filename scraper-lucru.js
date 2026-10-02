@@ -2,7 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const db = require('./db');
 
-async function scrapeDelucru() {
+async function scrapeLucru() {
   const cleanText = (str) => (str ? str.replace(/\s+/g, ' ').trim() : '');
 
   const insertJob = db.prepare(`
@@ -14,9 +14,13 @@ async function scrapeDelucru() {
   const totalPagesToScrape = 5;
 
   for (let page = 1; page <= totalPagesToScrape; page++) {
-    // Delucru's exact category=118 (IT) & region=158 (Chișinău) route
-    const url = `https://www.delucru.md/jobs?category=118&region=158&page=${page}`;
-    console.log(`Scraping page ${page} of Delucru.md...`);
+    // Lucru's /page-N path routing structure
+    const url =
+      page === 1
+        ? 'https://www.lucru.md/ro/lucru-chisinau/category-it'
+        : `https://www.lucru.md/ro/lucru-chisinau/category-it/page-${page}`;
+
+    console.log(`Scraping page ${page} of Lucru.md...`);
 
     try {
       const { data } = await axios.get(url, {
@@ -37,13 +41,13 @@ async function scrapeDelucru() {
         if (!link) return;
 
         const isVacancyLink =
-          (link.includes('/vacanc') || link.includes('/job/') || link.includes('/ro/job/')) &&
-          !link.includes('/jobs/') &&
-          !link.includes('/by-');
+          link.includes('/ro/lucru/') &&
+          !link.includes('/category-') &&
+          !link.includes('/lucru-chisinau');
 
-        if (isVacancyLink && title.length > 5) {
+        if (isVacancyLink && title.length > 3) {
           if (!link.startsWith('http')) {
-            link = `https://www.delucru.md${link}`;
+            link = `https://www.lucru.md${link}`;
           }
 
           const entryLevelRegex =
@@ -54,7 +58,7 @@ async function scrapeDelucru() {
               title,
               company: 'N/A',
               link,
-              source: 'Delucru.md',
+              source: 'Lucru.md',
               scrapedAt: new Date().toISOString(),
             });
 
@@ -68,12 +72,12 @@ async function scrapeDelucru() {
 
       console.log(`Page ${page}: Found and inserted ${pageNewJobs} new matching jobs.`);
     } catch (error) {
-      console.error(`Error scraping page ${page} of Delucru.md:`, error.message);
+      console.error(`Error scraping page ${page} of Lucru.md:`, error.message);
       break;
     }
   }
 
-  console.log(`\nDelucru.md scraping complete! Added ${totalNewJobs} new entry-level IT jobs across ${totalPagesToScrape} pages to SQLite.`);
+  console.log(`\nLucru.md scraping complete! Added ${totalNewJobs} new entry-level IT jobs across ${totalPagesToScrape} pages to SQLite.`);
 }
 
-scrapeDelucru();
+scrapeLucru();
