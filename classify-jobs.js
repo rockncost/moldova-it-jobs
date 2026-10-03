@@ -1,22 +1,41 @@
 const db = require('./db');
 
 function classifyJobs() {
-  const jobs = db.prepare('SELECT id, title, description FROM jobs WHERE description IS NOT NULL').all();
+  const jobs = db.prepare('SELECT id, title, company, description, link FROM jobs WHERE description IS NOT NULL').all();
 
-  console.log(`Re-analyzing and classifying ${jobs.length} enriched jobs...\n`);
+  console.log(`Analyzing and classifying ${jobs.length} enriched jobs stored in SQLite...\n`);
 
   const updateJob = db.prepare(`
     UPDATE jobs
     SET category = @category,
-        tags = @tags
+        tags = @tags,
+        status = @status
     WHERE id = @id
   `);
 
-  let classifiedCount = 0;
+  // Target ONLY true relocation programs or paid course requirements
+  const excludeProgramRegex = /icg engineering|\biaw\b|onboarding in germany|internship in germany|relocation to germany/i;
+  const excludeFeeRegex = /curs contra cost|taxă de instruire|taxa de instruire|taxă de participare/i;
+
+  let activeCount = 0;
+  let excludedCount = 0;
 
   for (const job of jobs) {
     const titleText = (job.title || '').toLowerCase();
+    const companyText = (job.company || '').toLowerCase();
     const descText = (job.description || '').toLowerCase();
+
+    const titleAndCompany = `${titleText} ${companyText}`;
+
+    // Soft delete check
+    const isExcluded = excludeProgramRegex.test(titleAndCompany) || excludeFeeRegex.test(descText);
+    const status = isExcluded ? 'excluded' : 'active';
+
+    if (isExcluded) {
+      excludedCount++;
+    } else {
+      activeCount++;
+    }
 
     let category = 'General IT';
     const tagsSet = new Set();
@@ -33,7 +52,6 @@ function classifyJobs() {
     } else if (/data|sql|analyst|analytics|bi|data scientist|data entry/i.test(titleText)) {
       category = 'Data & Analytics';
     } else {
-      // Description Fallback for ambiguous titles
       if (/\b(qa engineer|quality assurance|test automation)\b/i.test(descText)) {
         category = 'QA & Testing';
       } else if (/\b(software developer|full stack|frontend developer|backend developer)\b/i.test(descText)) {
@@ -48,7 +66,6 @@ function classifyJobs() {
     // 2. Skill & Work Condition Tag Extraction
     const titleAndDesc = `${titleText} ${descText}`;
 
-    // Work Condition Tags (Apply to any category)
     const conditionRules = [
       { tag: 'Customer Facing', regex: /\b(call center|phone support|suport clienți|client communication|client guidance)\b/i },
       { tag: 'Rotational Shifts', regex: /\b(rotational|shifts|24\/7|ture)\b/i },
@@ -62,7 +79,6 @@ function classifyJobs() {
       }
     });
 
-    // Tech Stack Tags (Only apply to technical categories)
     const techCategories = ['Software Development', 'QA & Testing', 'IT Support & Helpdesk', 'Data & Analytics'];
     
     if (techCategories.includes(category)) {
@@ -86,12 +102,11 @@ function classifyJobs() {
       id: job.id,
       category,
       tags: JSON.stringify(Array.from(tagsSet)),
+      status,
     });
-
-    classifiedCount++;
   }
 
-  console.log(`Re-classification complete! Updated ${classifiedCount} jobs.`);
+  console.log(`Classification complete! Active jobs: ${activeCount}, Excluded jobs: ${excludedCount}. Zero database rows were deleted.`);
 }
 
 classifyJobs();
