@@ -5,14 +5,13 @@ const db = require('./db');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static frontend files from /public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// REST API endpoint serving active, categorized jobs
 app.get('/api/jobs', (req, res) => {
   const { search, category } = req.query;
 
-  let query = "SELECT id, title, company, link, source, category, tags, scraped_at FROM jobs WHERE status = 'active'";
+  // Added quality_flags to SELECT query
+  let query = "SELECT id, title, company, link, source, category, tags, quality_flags, scraped_at FROM jobs WHERE status = 'active'";
   const params = [];
 
   if (search) {

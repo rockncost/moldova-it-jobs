@@ -38,6 +38,17 @@ function renderJobs(jobs) {
         tagsHtml = '';
       }
 
+      // Check for experience inflation flag
+      let flagsHtml = '';
+      try {
+        const flagsArray = JSON.parse(job.quality_flags || '[]');
+        if (flagsArray.includes('EXPERIENCE_INFLATION_2PLUS_YEARS')) {
+          flagsHtml = `<span class="badge badge-warning">⚠️ Requires 2+ Yrs Exp</span>`;
+        }
+      } catch (e) {
+        flagsHtml = '';
+      }
+
       return `
         <div class="job-card">
           <h2 class="job-title"><a href="${job.link}" target="_blank" rel="noopener">${job.title}</a></h2>
@@ -47,6 +58,7 @@ function renderJobs(jobs) {
           <div>
             <span class="badge badge-category">${job.category || 'General IT'}</span>
             <span class="badge badge-source">${job.source}</span>
+            ${flagsHtml}
             ${tagsHtml}
           </div>
         </div>
@@ -55,9 +67,7 @@ function renderJobs(jobs) {
     .join('');
 }
 
-// Event listeners for instant filtering
 searchInput.addEventListener('input', fetchJobs);
 categoryFilter.addEventListener('change', fetchJobs);
 
-// Initial load
 fetchJobs();
