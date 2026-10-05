@@ -5,21 +5,20 @@ console.log('Automated scraper scheduler started...');
 
 // Run every day at 8:00 AM (0 8 * * *)
 cron.schedule('0 8 * * *', () => {
-  console.log('Running daily Rabota, Delucru, and Lucru scrapers...');
+  console.log('Running daily pipeline: Scrape -> Enrich -> Analyze...');
 
-  // Chain all three scripts together with &&
   exec(
-    'node scraper-rabota.js && node scraper-delucru.js && node scraper-lucru.js',
+    'node scraper-rabota.js && node scraper-delucru.js && node scraper-lucru.js && node enrich-jobs.js && node pipeline-analyze.js',
     (error, stdout, stderr) => {
       if (error) {
-        console.error(`Scraper error: ${error.message}`);
+        console.error(`Pipeline error: ${error.message}`);
         return;
       }
       if (stderr) {
-        console.error(`Scraper stderr: ${stderr}`);
+        console.error(`Pipeline stderr: ${stderr}`);
         return;
       }
-      console.log(`Scraper output:\n${stdout}`);
+      console.log(`Pipeline output:\n${stdout}`);
     }
   );
 });

@@ -66,11 +66,13 @@ function classifyJobs() {
     // 2. Skill & Work Condition Tag Extraction
     const titleAndDesc = `${titleText} ${descText}`;
 
+    // Replace the old condition rule in classify-jobs.js
     const conditionRules = [
       { tag: 'Customer Facing', regex: /\b(call center|phone support|suport clienți|client communication|client guidance)\b/i },
       { tag: 'Rotational Shifts', regex: /\b(rotational|shifts|24\/7|ture)\b/i },
       { tag: 'English Required', regex: /\b(english|engleză)\b/i },
-      { tag: 'Training Offered', regex: /\b(instruire oferim|training provided|instruire|cursuri)\b/i },
+      // Requiring multi-word phrases prevents menu links and candidate requirements from triggering the badge
+      { tag: 'Training Offered', regex: /\b(instruire oferim|oferim instruire|training provided|paid training|asigurăm instruire|asiguram instruire)\b/i },
     ];
 
     conditionRules.forEach(({ tag, regex }) => {
