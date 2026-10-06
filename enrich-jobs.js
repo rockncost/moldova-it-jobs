@@ -1,77 +1,38 @@
 const axios = require('axios');
-const cheerio = require('cheerio');
 const db = require('./db');
+const { extractDetails, safeJobLink } = require('./lib/job-extractor');
+const { runAnalysisPipeline } = require('./pipeline-analyze');
 
-// Helper delay function to avoid overwhelming job boards
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-async function enrichJobs() {
-  const cleanText = (str) => (str ? str.replace(/\s+/g, ' ').trim() : '');
-
-  // Select all jobs that haven't been enriched with full descriptions yet
-  const pendingJobs = db.prepare('SELECT id, link, source, company FROM jobs WHERE description IS NULL').all();
-
-  console.log(`Found ${pendingJobs.length} jobs requiring detailed page scraping...\n`);
-
-  const updateJob = db.prepare(`
-    UPDATE jobs
-    SET description = @description,
-        company = CASE WHEN @company <> 'N/A' AND @company <> '' THEN @company ELSE company END
-    WHERE id = @id
-  `);
-
-  let enrichedCount = 0;
-
-  for (const job of pendingJobs) {
-    console.log(`[${job.source}] Fetching details for ID ${job.id}...`);
-
+async function enrichJobs({ force = false, limit = 300, delay = 350, database = db } = {}) {
+  const pending = database.prepare(`SELECT * FROM jobs ${force ? '' : "WHERE description IS NULL OR description_quality <> 'verified' OR detail_checked_at < datetime('now', '-7 days')"} ORDER BY description IS NULL DESC, scraped_at DESC LIMIT ?`).all(limit);
+  const update = database.prepare(`UPDATE jobs SET description = @description,
+    raw_description = COALESCE(raw_description, description), description_quality = 'verified',
+    company = CASE WHEN @company <> 'N/A' THEN @company ELSE company END,
+    title = CASE WHEN @title <> '' THEN @title ELSE title END,
+    location = @location, work_mode = @work_mode, schedule = @schedule, salary = @salary,
+    source_metadata = @metadata, detail_checked_at = @now, detail_error = NULL, availability = 'open',
+    analysis_version = 0 WHERE id = @id`);
+  const fail = database.prepare('UPDATE jobs SET detail_error = ?, availability = CASE WHEN ? THEN \'closed\' ELSE availability END, analysis_version = 0 WHERE id = ?');
+  let enriched = 0;
+  for (const job of pending) {
     try {
-      const { data } = await axios.get(job.link, {
-        headers: {
-          'User-Agent':
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-          'Accept-Language': 'ro-RO,ro;q=0.9,en-US;q=0.8,en;q=0.7',
-        },
-        timeout: 10000,
-      });
-
-      const $ = cheerio.load(data);
-      let descriptionText = '';
-      let extractedCompany = 'N/A';
-
-      if (job.source === 'Rabota.md') {
-        descriptionText = cleanText($('.vacancy-description, .vacancy-body, .preview-card-body').text());
-        extractedCompany = cleanText($('.vacancy-sidebar-company-name, a[href*="/company/"]').first().text());
-      } else if (job.source === 'Delucru.md') {
-        descriptionText = cleanText($('.job-description, .vacancy-description, article, .content').text());
-        extractedCompany = cleanText($('.company-name, a[href*="/company/"]').first().text());
-      } else if (job.source === 'Lucru.md') {
-        descriptionText = cleanText($('.vacancy-content, .job-details, article').text());
-        extractedCompany = cleanText($('.company-title, a[href*="/company/"]').first().text());
-      }
-
-      // Fallback selector if specific source wrapper yields empty text
-      if (!descriptionText || descriptionText.length < 50) {
-        descriptionText = cleanText($('body').text());
-      }
-
-      updateJob.run({
-        id: job.id,
-        description: descriptionText,
-        company: extractedCompany,
-      });
-
-      enrichedCount++;
-      console.log(`-> Enriched job ID ${job.id} (${descriptionText.length} characters extracted)`);
-
-      // 1 second pause between HTTP requests
-      await sleep(1000);
+      if (!safeJobLink(job.link, job.source)) throw new Error('Invalid source URL');
+      const { data } = await axios.get(job.link, { timeout: 15000, maxContentLength: 5_000_000,
+        headers: { 'User-Agent': 'MoldovaEntryJobs/1.0', 'Accept-Language': 'ro,en;q=0.8' } });
+      const details = extractDetails(data, job.source);
+      update.run({ ...details, metadata: JSON.stringify(details.metadata), id: job.id, now: new Date().toISOString() });
+      enriched++;
     } catch (error) {
-      console.error(`Failed to enrich job ID ${job.id} (${job.link}): ${error.message}`);
+      fail.run(error.message.slice(0,300), [404,410].includes(error.response?.status) ? 1 : 0, job.id);
+      console.error(`[${job.source}] #${job.id}: ${error.message}`);
     }
+    if (delay) await new Promise(resolve => setTimeout(resolve, delay));
+    if ((enriched % 20 === 0 && enriched) || enriched === pending.length) console.log(`Verified ${enriched}/${pending.length} vacancy pages.`);
   }
-
-  console.log(`\nDetailed Page Scraping complete! Enriched ${enrichedCount} out of ${pendingJobs.length} jobs.`);
+  runAnalysisPipeline(database, { onlyPending: true });
+  console.log(`Detail refresh: ${enriched}/${pending.length} verified.`);
+  return { enriched, attempted: pending.length };
 }
 
-enrichJobs();
+if (require.main === module) enrichJobs({ force: process.argv.includes('--force') }).catch(error => { console.error(error); process.exitCode = 1; });
+module.exports = { enrichJobs };

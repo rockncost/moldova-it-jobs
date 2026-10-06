@@ -2,10 +2,13 @@
   "name": "moldova-it-jobs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "concurrently \"node server.js\" \"node cron.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test tests/*.test.js",
+    "analyze": "node pipeline-analyze.js",
+    "refresh": "node refresh-jobs.js",
+    "serve": "node server.js"
   },
   "keywords": [],
   "author": "",

@@ -3,45 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moldova IT Entry Jobs</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 30px auto; padding: 0 20px; background: #f8f9fa; color: #333; }
-    h1 { color: #1a252f; margin-bottom: 5px; }
-    p.subtitle { color: #6c757d; margin-top: 0; margin-bottom: 25px; }
-    .controls { display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap; }
-    input, select { padding: 10px 14px; font-size: 15px; border: 1px solid #ced4da; border-radius: 6px; outline: none; }
-    input { flex: 1; min-width: 200px; }
-    .job-card { background: white; border: 1px solid #e9ecef; border-radius: 8px; padding: 18px 22px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-    .job-title { margin: 0 0 6px 0; font-size: 18px; }
-    .job-title a { color: #0066cc; text-decoration: none; }
-    .job-title a:hover { text-decoration: underline; }
-    .job-meta { font-size: 14px; color: #6c757d; margin-bottom: 10px; }
-    .badge { display: inline-block; padding: 3px 8px; font-size: 12px; font-weight: 600; border-radius: 4px; margin-right: 6px; margin-top: 5px; }
-    .badge-source { background: #e9ecef; color: #495057; }
-    .badge-category { background: #e3f2fd; color: #0d47a1; }
-    .badge-tag { background: #f3e5f5; color: #4a148c; }
-    .badge-warning { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
-  </style>
+  <meta name="description" content="Beginner IT and digital vacancies in Chișinău, with clear experience requirements and no advertised training fees.">
+  <title>First Step · Chișinău IT Jobs</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Chișinău IT Entry-Level Jobs</h1>
-  <p class="subtitle">Aggregated student & entry-level roles across Rabota.md, Delucru.md, and Lucru.md</p>
+  <header class="site-header">
+    <a href="/" class="brand"><span class="brand-mark" aria-hidden="true">↗</span> First Step <span class="brand-place">CHIȘINĂU</span></a>
+    <span class="header-note">A starting point for your IT career</span>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="eyebrow">YOUR SKILLS HAVE A STARTING POINT</div>
+      <h1>Find your first<br><span>job in tech.</span></h1>
+      <p class="intro-text">IT and digital roles for students, graduates and self-taught beginners in Chișinău. Three job boards, clearer requirements.</p>
+      <div class="principles"><span>◉ Beginner signals explained</span><span>◉ Advertised training fees excluded</span><span>◉ Original sources linked</span></div>
+    </section>
 
-  <div class="controls">
-    <input type="text" id="searchInput" placeholder="Search titles, companies, or tech stack...">
-    <select id="categoryFilter">
-      <option value="">All Categories</option>
-      <option value="Software Development">Software Development</option>
-      <option value="QA & Testing">QA & Testing</option>
-      <option value="IT Support & Helpdesk">IT Support & Helpdesk</option>
-      <option value="Marketing & Web Tech">Marketing & Web Tech</option>
-      <option value="Data & Analytics">Data & Analytics</option>
-      <option value="General IT">General IT</option>
-    </select>
-  </div>
+    <section class="board" aria-label="Job search">
+      <div class="board-heading"><h2>Explore opportunities</h2><span id="freshness">Checking saved listings…</span></div>
+      <div class="fit-tabs" role="group" aria-label="Beginner fit">
+        <button type="button" data-fit="beginner" aria-pressed="true" class="active">Beginner matches <span id="count-beginner">–</span></button>
+        <button type="button" data-fit="stretch" aria-pressed="false">Stretch roles <span id="count-stretch">–</span></button>
+        <button type="button" data-fit="review" aria-pressed="false">Needs checking <span id="count-review">–</span></button>
+        <button type="button" data-fit="all" aria-pressed="false">All relevant <span id="count-all">–</span></button>
+      </div>
+      <p id="fitDescription" class="fit-description">Explicit junior, student or no-experience signals, without a stated experience barrier. Check each employer's terms before applying.</p>
+      <form id="filters" class="controls" role="search">
+        <div class="search-field"><label for="searchInput">Search</label><input type="search" id="searchInput" placeholder="Job title, employer or skill…" autocomplete="off"></div>
+        <div><label for="categoryFilter">Role</label><select id="categoryFilter"><option value="">All categories</option></select></div>
+        <div><label for="tagFilter">Skill or condition</label><select id="tagFilter"><option value="">Any tag</option></select></div>
+        <div><label for="sourceFilter">Source</label><select id="sourceFilter"><option value="">All three boards</option></select></div>
+        <button id="clearFilters" type="button" class="text-button">Reset</button>
+      </form>
+      <div class="results-heading"><p id="resultCount" role="status" aria-live="polite">Loading opportunities…</p><span>Sorted by beginner signals</span></div>
+      <div id="jobList" aria-busy="true"><div class="state">Loading vacancies…</div></div>
+    </section>
 
-  <div id="jobList">Loading jobs...</div>
-
-  <script src="app.js"></script>
+    <details class="methodology">
+      <summary>How are jobs selected?</summary>
+      <p>Local rules read Romanian, Russian and English vacancy text. Role titles and actual duties establish categories. Experience requirements, optional qualifications, student alternatives and work conditions are assessed separately.</p>
+      <p>Beginner matches have an explicit junior, internship, student or no-experience signal and verified vacancy text. Stretch roles ask for up to one year of experience. Unclear requirements, completed degrees and mixed seniority go to Needs checking. Required experience of two years or more, senior roles, unrelated work, unpaid programmes, mandatory relocation abroad, courses and advertised training fees are excluded.</p>
+      <p>These labels describe the advert; they are not a guarantee of suitability, payment or hiring. “Employer training” does not guarantee free training. No stated fee means no fee was found in the text; confirm pay and any training conditions with the employer. A flexible schedule or part-time work is tagged only when stated.</p>
+      <p id="exclusionCount"></p>
+    </details>
+  </main>
+  <footer>FIRST STEP · CHIȘINĂU <span>Vacancies belong to their original publishers.</span></footer>
+  <script src="app.js" defer></script>
 </body>
 </html>
