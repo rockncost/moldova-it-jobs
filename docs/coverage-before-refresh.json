@@ -1,0 +1,1274 @@
+{
+  "at": "2026-10-06T14:04:48.346Z",
+  "scope": "First up to five pages per dedicated search; title candidates require detail review. Live results vary.",
+  "searches": [
+    {
+      "source": "Rabota.md",
+      "name": "Internships",
+      "url": "https://www.rabota.md/ro/vacancies/category/internship",
+      "pages": 1,
+      "listings": [
+        {
+          "title": "Stagiar SMM",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/stagiar-smm/105683",
+          "company": "Moldflowers",
+          "source": "Rabota.md",
+          "id": 483,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/stagiar-smm/105683",
+          "coverage": "visible"
+        },
+        {
+          "title": "Стажер SEO",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/stazher-seo/104211",
+          "company": "Moldflowers",
+          "source": "Rabota.md",
+          "id": 482,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/stazher-seo/104211",
+          "coverage": "visible"
+        },
+        {
+          "title": "Stagiar SEO",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/stagiar-seo/104210",
+          "company": "Moldflowers",
+          "source": "Rabota.md",
+          "id": 481,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/stagiar-seo/104210",
+          "coverage": "visible"
+        },
+        {
+          "title": "Safety Support Specialist (ELD)",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/safety-support-specialist-eld/101099",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Internship IT",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/internship-it/49206",
+          "company": "Unifun",
+          "source": "Rabota.md",
+          "id": 243,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/internship-it/49206",
+          "coverage": "visible"
+        },
+        {
+          "title": "IT Product Manager Internship",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/it-product-manager-internship/57939",
+          "company": "Unifun",
+          "source": "Rabota.md",
+          "id": 245,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/it-product-manager-internship/57939",
+          "coverage": "visible"
+        },
+        {
+          "title": "Стажёр Системного Администратора / Stagiar Administrator de Sistem",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/stazher-sistemnogo-administratora-stagiar-administrator-de-sistem/144486",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Embedded Engineer C/C++ with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-embedded-engineer-c-c-with-onboarding-in-germany-followed-by-employment-in-chisinau/144243",
+          "company": "IAW",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior QA Automation Engineer (Python) with onboarding in Germany followed be employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-qa-automation-engineer-python-with-onboarding-in-germany-followed-be-employment-in-chisinau/134922",
+          "company": "IAW",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior C# Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-c-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141448",
+          "company": "IAW",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-java-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141495",
+          "company": "IAW",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "C/C++, C#, Java, Python, Embedded, Web, Software, Full-Stack internship in Germany followed by employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/c-c-c-java-python-embedded-web-software-full-stack-internship-in-germany-followed-by-employment-in-chisinau/85539",
+          "company": "IAW",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "Rabota.md",
+      "name": "Junior search",
+      "url": "https://www.rabota.md/ro/jobs-chisinau-junior",
+      "pages": 3,
+      "listings": [
+        {
+          "title": "SEO specialist (junior) - intruire oferim",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/seo-specialist-junior-intruire-oferim/104194",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 257,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/seo-specialist-junior-intruire-oferim/104194",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior Digital Specialist (Marketing & E-commerce)",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-digital-specialist-marketing-e-commerce/144222",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 259,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/junior-digital-specialist-marketing-e-commerce/144222",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior Linux - Network Administrator (800 USD)",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-linux-network-administrator-800-usd/36767",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 266,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/junior-linux-network-administrator-800-usd/36767",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior IT Product Manager (800 USD)",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-it-product-manager-800-usd/100578",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 246,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/junior-it-product-manager-800-usd/100578",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior PHP Developer (800 USD)",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-php-developer-800-usd/120825",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 267,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/junior-php-developer-800-usd/120825",
+          "coverage": "visible"
+        },
+        {
+          "title": "DevOps Engineer Junior, Secția Reţea și Echipamente, Departamentul Tehnologii Informaționale",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/devops-engineer-junior-sectia-retea-si-echipamente-departamentul-tehnologii-informationale/144616",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 492,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/devops-engineer-junior-sectia-retea-si-echipamente-departamentul-tehnologii-informationale/144616",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior IT Support Specialist (Help Desk și suport operațional)",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-it-support-specialist-help-desk-si-suport-operational/141999",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 250,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/junior-it-support-specialist-help-desk-si-suport-operational/141999",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior Data Entry",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-data-entry/135362",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "IT junior",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/it-junior/66751",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "id": 244,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.rabota.md/ro/locuri-de-munca/it-junior/66751",
+          "coverage": "visible"
+        },
+        {
+          "title": "Programator Junior / Middle – SQL / PL/SQL (Oracle) ID:ORA",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/programator-junior-middle-sql-pl-sql-oracle-idora/4349",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior QA Automation Engineer (Python) with onboarding in Germany followed be employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-qa-automation-engineer-python-with-onboarding-in-germany-followed-be-employment-in-chisinau/134922",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior C# Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-c-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141448",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-java-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141495",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Embedded Engineer C/C++ with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-embedded-engineer-c-c-with-onboarding-in-germany-followed-by-employment-in-chisinau/144243",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-java-developer/57591",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Python AI developer",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-python-ai-developer/144231",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Web Developer",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-web-developer/141405",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/junior-java-developer/141406",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Сис. админ | Administrator de sistem",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/sis-admin-administrator-de-sistem/917",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Business Analyst",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/business-analyst/138618",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "OT Cybersecurity Engineer",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/ot-cybersecurity-engineer/143892",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "QA specialist, Game tester",
+          "link": "https://www.rabota.md/ro/locuri-de-munca/qa-specialist-game-tester/144560",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Specialist junior e-commerce — fără experiență",
+          "link": "https://www.rabota.md/ro/joburi/specialist-junior-e-commerce-fara-experienta/16878241",
+          "company": "N/A",
+          "source": "Rabota.md",
+          "coverage": "missing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "Lucru.md",
+      "name": "Internships",
+      "url": "https://www.lucru.md/ro/posturi-vacante/categorie/internship",
+      "pages": 1,
+      "listings": [
+        {
+          "title": "Stagiar SMM",
+          "link": "https://www.lucru.md/ro/lucru/stagiar-smm/105683",
+          "company": "Moldflowers",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Стажер SEO",
+          "link": "https://www.lucru.md/ro/lucru/stazher-seo/104211",
+          "company": "Moldflowers",
+          "source": "Lucru.md",
+          "id": 629,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/stazher-seo/104211",
+          "coverage": "visible"
+        },
+        {
+          "title": "Stagiar SEO",
+          "link": "https://www.lucru.md/ro/lucru/stagiar-seo/104210",
+          "company": "Moldflowers",
+          "source": "Lucru.md",
+          "id": 630,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/stagiar-seo/104210",
+          "coverage": "visible"
+        },
+        {
+          "title": "Safety Support Specialist (ELD)",
+          "link": "https://www.lucru.md/ro/lucru/safety-support-specialist-eld/101099",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Internship IT",
+          "link": "https://www.lucru.md/ro/lucru/internship-it/49206",
+          "company": "Unifun",
+          "source": "Lucru.md",
+          "id": 141,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/internship-it/49206",
+          "coverage": "visible"
+        },
+        {
+          "title": "IT Product Manager Internship",
+          "link": "https://www.lucru.md/ro/lucru/it-product-manager-internship/57939",
+          "company": "Unifun",
+          "source": "Lucru.md",
+          "id": 148,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/it-product-manager-internship/57939",
+          "coverage": "visible"
+        },
+        {
+          "title": "Стажёр Системного Администратора / Stagiar Administrator de Sistem",
+          "link": "https://www.lucru.md/ro/lucru/stazher-sistemnogo-administratora-stagiar-administrator-de-sistem/144486",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Embedded Engineer C/C++ with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-embedded-engineer-c-c-with-onboarding-in-germany-followed-by-employment-in-chisinau/144243",
+          "company": "IAW",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior QA Automation Engineer (Python) with onboarding in Germany followed be employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-qa-automation-engineer-python-with-onboarding-in-germany-followed-be-employment-in-chisinau/134922",
+          "company": "IAW",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior C# Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-c-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141448",
+          "company": "IAW",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-java-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141495",
+          "company": "IAW",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "C/C++, C#, Java, Python, Embedded, Web, Software, Full-Stack internship in Germany followed by employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/c-c-c-java-python-embedded-web-software-full-stack-internship-in-germany-followed-by-employment-in-chisinau/85539",
+          "company": "IAW",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "Lucru.md",
+      "name": "Junior search",
+      "url": "https://www.lucru.md/ro/lucru-chisinau-junior",
+      "pages": 3,
+      "listings": [
+        {
+          "title": "SEO specialist (junior) - intruire oferim",
+          "link": "https://www.lucru.md/ro/lucru/seo-specialist-junior-intruire-oferim/104194",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 108,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/seo-specialist-junior-intruire-oferim/104194",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior Digital Specialist (Marketing & E-commerce)",
+          "link": "https://www.lucru.md/ro/lucru/junior-digital-specialist-marketing-e-commerce/144222",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Linux - Network Administrator (800 USD)",
+          "link": "https://www.lucru.md/ro/lucru/junior-linux-network-administrator-800-usd/36767",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 149,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/junior-linux-network-administrator-800-usd/36767",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior IT Product Manager (800 USD)",
+          "link": "https://www.lucru.md/ro/lucru/junior-it-product-manager-800-usd/100578",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 150,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/junior-it-product-manager-800-usd/100578",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior PHP Developer (800 USD)",
+          "link": "https://www.lucru.md/ro/lucru/junior-php-developer-800-usd/120825",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 147,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/junior-php-developer-800-usd/120825",
+          "coverage": "visible"
+        },
+        {
+          "title": "DevOps Engineer Junior, Secția Reţea și Echipamente, Departamentul Tehnologii Informaționale",
+          "link": "https://www.lucru.md/ro/lucru/devops-engineer-junior-sectia-retea-si-echipamente-departamentul-tehnologii-informationale/144616",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 154,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/devops-engineer-junior-sectia-retea-si-echipamente-departamentul-tehnologii-informationale/144616",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior IT Support Specialist (Help Desk și suport operațional)",
+          "link": "https://www.lucru.md/ro/lucru/junior-it-support-specialist-help-desk-si-suport-operational/141999",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 155,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/junior-it-support-specialist-help-desk-si-suport-operational/141999",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior Data Entry",
+          "link": "https://www.lucru.md/ro/lucru/junior-data-entry/135362",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "IT junior",
+          "link": "https://www.lucru.md/ro/lucru/it-junior/66751",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 107,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/it-junior/66751",
+          "coverage": "visible"
+        },
+        {
+          "title": "Programator Junior / Middle – SQL / PL/SQL (Oracle) ID:ORA",
+          "link": "https://www.lucru.md/ro/lucru/programator-junior-middle-sql-pl-sql-oracle-idora/4349",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 236,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/programator-junior-middle-sql-pl-sql-oracle-idora/4349",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior QA Automation Engineer (Python) with onboarding in Germany followed be employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-qa-automation-engineer-python-with-onboarding-in-germany-followed-be-employment-in-chisinau/134922",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior C# Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-c-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141448",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-java-developer-with-onboarding-in-germany-followed-by-employment-in-chisinau/141495",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Embedded Engineer C/C++ with onboarding in Germany followed by employment in Chisinau",
+          "link": "https://www.lucru.md/ro/lucru/junior-embedded-engineer-c-c-with-onboarding-in-germany-followed-by-employment-in-chisinau/144243",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer",
+          "link": "https://www.lucru.md/ro/lucru/junior-java-developer/57591",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Python AI developer",
+          "link": "https://www.lucru.md/ro/lucru/junior-python-ai-developer/144231",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Web Developer",
+          "link": "https://www.lucru.md/ro/lucru/junior-web-developer/141405",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Java Developer",
+          "link": "https://www.lucru.md/ro/lucru/junior-java-developer/141406",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Сис. админ | Administrator de sistem",
+          "link": "https://www.lucru.md/ro/lucru/sis-admin-administrator-de-sistem/917",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "id": 682,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.lucru.md/ro/lucru/sis-admin-administrator-de-sistem/917",
+          "coverage": "visible"
+        },
+        {
+          "title": "Business Analyst",
+          "link": "https://www.lucru.md/ro/lucru/business-analyst/138618",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "OT Cybersecurity Engineer",
+          "link": "https://www.lucru.md/ro/lucru/ot-cybersecurity-engineer/143892",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "QA specialist, Game tester",
+          "link": "https://www.lucru.md/ro/lucru/qa-specialist-game-tester/144560",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Specialist junior e-commerce — fără experiență",
+          "link": "https://www.lucru.md/ro/munca/specialist-junior-e-commerce-fara-experienta/16878241",
+          "company": "N/A",
+          "source": "Lucru.md",
+          "coverage": "missing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "Delucru.md",
+      "name": "Internships",
+      "url": "https://www.delucru.md/jobs/internship-programmes",
+      "pages": 1,
+      "listings": [
+        {
+          "title": "IT Product Manager Internship",
+          "link": "https://www.delucru.md/job/7472",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 280,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/7472",
+          "coverage": "visible"
+        },
+        {
+          "title": "IT Internship",
+          "link": "https://www.delucru.md/job/5025",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 276,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/5025",
+          "coverage": "visible"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "Delucru.md",
+      "name": "No experience",
+      "url": "https://www.delucru.md/jobs/jobs-where-experience-is-not-required",
+      "pages": 5,
+      "listings": [
+        {
+          "title": "SAP S/4HANA Internal Support Specialist (Application & Process Owner)",
+          "link": "https://www.delucru.md/job/114152",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 102,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/114152",
+          "coverage": "visible"
+        },
+        {
+          "title": "Programator / programatoare producție, Strășeni",
+          "link": "https://www.delucru.md/job/111487",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Ilustrator / Designer Grafic (Editură)",
+          "link": "https://www.delucru.md/job/110758",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Сотрудник рецепции и службы поддержки",
+          "link": "https://www.delucru.md/job/88394",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Data Scientist - Python Developer",
+          "link": "https://www.delucru.md/job/88409",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 273,
+          "status": "excluded",
+          "entry_fit": "excluded",
+          "exclusion_reason": "At least two years of experience are required.",
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/88409",
+          "coverage": "stored / excluded"
+        },
+        {
+          "title": "Junior Java Developer",
+          "link": "https://www.delucru.md/job/35126",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 274,
+          "status": "active",
+          "entry_fit": "review",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/35126",
+          "coverage": "visible"
+        },
+        {
+          "title": "Digital Marketing Specialist",
+          "link": "https://www.delucru.md/job/117366",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Specialist Customer Care, Suport Clienți",
+          "link": "https://www.delucru.md/job/105277",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Digital Retail Loans Product Owner",
+          "link": "https://www.delucru.md/job/117371",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Designer Grafic",
+          "link": "https://www.delucru.md/job/101907",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Design Grafic",
+          "link": "https://www.delucru.md/job/101910",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Support Engineer, Monitoring",
+          "link": "https://www.delucru.md/job/85952",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 281,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/85952",
+          "coverage": "visible"
+        },
+        {
+          "title": "Graphic designer",
+          "link": "https://www.delucru.md/job/66808",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "IT Product Manager",
+          "link": "https://www.delucru.md/job/5011",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 336,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/5011",
+          "coverage": "visible"
+        },
+        {
+          "title": "Junior PHP Developer",
+          "link": "https://www.delucru.md/job/103334",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 278,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/103334",
+          "coverage": "visible"
+        },
+        {
+          "title": "Administrator retea (suport tehnic)",
+          "link": "https://www.delucru.md/job/86348",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 349,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/86348",
+          "coverage": "visible"
+        },
+        {
+          "title": "Customer Support Agents | Korean & English",
+          "link": "https://www.delucru.md/job/13524",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Customer Support Agent | English",
+          "link": "https://www.delucru.md/job/13527",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Customer Support Agent - Night Shift | English",
+          "link": "https://www.delucru.md/job/13526",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Customer Support Agent - Part-time | English",
+          "link": "https://www.delucru.md/job/25858",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Customer Support Agent - Student Shift | English",
+          "link": "https://www.delucru.md/job/17221",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Customer Support Agent | Georgian-Russian/Romanian",
+          "link": "https://www.delucru.md/job/45650",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Customer Support Agents | English and Spanish",
+          "link": "https://www.delucru.md/job/71937",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Customer Support Agent - Day Shift | English",
+          "link": "https://www.delucru.md/job/4354",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior IT Product Manager",
+          "link": "https://www.delucru.md/job/51460",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 279,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/51460",
+          "coverage": "visible"
+        },
+        {
+          "title": "Digital Marketing Specialist (Google Ads)",
+          "link": "https://www.delucru.md/job/113539",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source": "Delucru.md",
+      "name": "Entry level",
+      "url": "https://www.delucru.md/jobs/entry-level",
+      "pages": 5,
+      "listings": [
+        {
+          "title": "Social Media Manager",
+          "link": "https://www.delucru.md/job/108632",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Manager de Marketing Digital",
+          "link": "https://www.delucru.md/job/86220",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Ilustrator / Designer Grafic (Editură)",
+          "link": "https://www.delucru.md/job/110758",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Operator Suport Clienți & Coordonare Vizionări, Imobiliare",
+          "link": "https://www.delucru.md/job/103006",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "DevOps Engineer Junior, Secția Reţea și Echipamente, Departamentul Tehnologii Informaționale",
+          "link": "https://www.delucru.md/job/117861",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 275,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/117861",
+          "coverage": "visible"
+        },
+        {
+          "title": "Analist Producţie Informatică – Parametraj și Suport, Secția Centrul de Exploatare, Departamentul Tehnologii Informaționale",
+          "link": "https://www.delucru.md/job/114454",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 345,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/114454",
+          "coverage": "visible"
+        },
+        {
+          "title": "Operator suport pacienți",
+          "link": "https://www.delucru.md/job/87470",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Quality Assurance (QA) Assistant la Oratorica",
+          "link": "https://www.delucru.md/job/117576",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Сотрудник рецепции и службы поддержки",
+          "link": "https://www.delucru.md/job/88394",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Оператор службы поддержки колл-центра",
+          "link": "https://www.delucru.md/job/36763",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Banking Junior Developer, Moldova",
+          "link": "https://www.delucru.md/job/16256",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 277,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/16256",
+          "coverage": "visible"
+        },
+        {
+          "title": "Marketing & Social Media Manager",
+          "link": "https://www.delucru.md/job/84596",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Specialist suport tehnic IT",
+          "link": "https://www.delucru.md/job/113190",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 328,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/113190",
+          "coverage": "visible"
+        },
+        {
+          "title": "Digital Marketing Specialist",
+          "link": "https://www.delucru.md/job/117366",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Specialist Customer Care, Suport Clienți",
+          "link": "https://www.delucru.md/job/105277",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Digital Retail Loans Product Owner",
+          "link": "https://www.delucru.md/job/117371",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Graphic designer",
+          "link": "https://www.delucru.md/job/66808",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Content manager website /SEO",
+          "link": "https://www.delucru.md/job/61591",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Business Analyst (1.500 USD)",
+          "link": "https://www.delucru.md/job/4990",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Junior Linux - Network Administrator (800 USD)",
+          "link": "https://www.delucru.md/job/5002",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 282,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/5002",
+          "coverage": "visible"
+        },
+        {
+          "title": "Content Manager RU/EN",
+          "link": "https://www.delucru.md/job/14178",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "IT Product Manager (Owner - 3.000 USD)",
+          "link": "https://www.delucru.md/job/14180",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 331,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/14180",
+          "coverage": "visible"
+        },
+        {
+          "title": "IT Product Manager Internship",
+          "link": "https://www.delucru.md/job/7472",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 280,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/7472",
+          "coverage": "visible"
+        },
+        {
+          "title": "Business Process Developer",
+          "link": "https://www.delucru.md/job/14179",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 334,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/14179",
+          "coverage": "visible"
+        },
+        {
+          "title": "IT Internship",
+          "link": "https://www.delucru.md/job/5025",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 276,
+          "status": "active",
+          "entry_fit": "beginner",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/5025",
+          "coverage": "visible"
+        },
+        {
+          "title": "Administrator web site",
+          "link": "https://www.delucru.md/job/40881",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Recepționer/ă mărfuri - operator introducere date",
+          "link": "https://www.delucru.md/job/11798",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Программист 1С",
+          "link": "https://www.delucru.md/job/66105",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Specialist IT 1C",
+          "link": "https://www.delucru.md/job/117957",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 348,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/117957",
+          "coverage": "visible"
+        },
+        {
+          "title": "Specialist Suport Clienți, full time (8 ore), Bălți",
+          "link": "https://www.delucru.md/job/115467",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Administrator retea (suport tehnic)",
+          "link": "https://www.delucru.md/job/86348",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 349,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/86348",
+          "coverage": "visible"
+        },
+        {
+          "title": "E-Commerce Customer Support",
+          "link": "https://www.delucru.md/job/6434",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "coverage": "missing"
+        },
+        {
+          "title": "Java Developer",
+          "link": "https://www.delucru.md/job/102585",
+          "company": "N/A",
+          "source": "Delucru.md",
+          "id": 351,
+          "status": "active",
+          "entry_fit": "other",
+          "exclusion_reason": null,
+          "availability": "unknown",
+          "stored_link": "https://www.delucru.md/job/102585",
+          "coverage": "visible"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

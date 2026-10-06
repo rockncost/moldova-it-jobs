@@ -22,33 +22,51 @@
 
     <section class="board" aria-label="Job search">
       <div class="board-heading"><h2>Explore opportunities</h2><span id="freshness">Checking saved listings…</span></div>
+      <div class="personal-tabs" role="group" aria-label="My job search">
+        <button type="button" data-view="browse" class="active" aria-pressed="true">Browse jobs</button>
+        <button type="button" data-view="saved" aria-pressed="false">Saved <span id="personal-saved">0</span></button>
+        <button type="button" data-view="applications" aria-pressed="false">Applications <span id="personal-applications">0</span></button>
+        <button type="button" data-view="hidden" aria-pressed="false">Hidden <span id="personal-hidden">0</span></button>
+      </div>
+      <p class="local-note">Saved jobs and application progress stay in this browser. No account needed.</p>
+      <details class="refresh-health"><summary>Source refresh status</summary><div id="sourceHealth" role="status">Checking source updates…</div><p>Adverts older than seven days are queued for rechecking. A failed check preserves the last good snapshot. Scheduled refreshes require this computer to be on and online.</p></details>
+      <p id="storageNotice" class="storage-notice" role="status" hidden></p>
+      <div id="actionNotice" class="action-notice" role="status" hidden></div>
       <div class="fit-tabs" role="group" aria-label="Beginner fit">
         <button type="button" data-fit="beginner" aria-pressed="true" class="active">Beginner matches <span id="count-beginner">–</span></button>
         <button type="button" data-fit="stretch" aria-pressed="false">Stretch roles <span id="count-stretch">–</span></button>
         <button type="button" data-fit="review" aria-pressed="false">Needs checking <span id="count-review">–</span></button>
+        <button type="button" data-fit="other" aria-pressed="false">Other roles <span id="count-other">–</span></button>
         <button type="button" data-fit="all" aria-pressed="false">All relevant <span id="count-all">–</span></button>
       </div>
       <p id="fitDescription" class="fit-description">Explicit junior, student or no-experience signals, without a stated experience barrier. Check each employer's terms before applying.</p>
+      <div id="reviewControls" class="review-controls" hidden><label for="reviewFilter">What needs checking?</label><select id="reviewFilter"><option value="">All review reasons</option></select></div>
       <form id="filters" class="controls" role="search">
         <div class="search-field"><label for="searchInput">Search</label><input type="search" id="searchInput" placeholder="Job title, employer or skill…" autocomplete="off"></div>
         <div><label for="categoryFilter">Role</label><select id="categoryFilter"><option value="">All categories</option></select></div>
-        <div><label for="tagFilter">Skill or condition</label><select id="tagFilter"><option value="">Any tag</option></select></div>
+        <div><label for="tagFilter">Add skill or condition</label><select id="tagFilter"><option value="">Choose tags…</option></select></div>
         <div><label for="sourceFilter">Source</label><select id="sourceFilter"><option value="">All three boards</option></select></div>
         <button id="clearFilters" type="button" class="text-button">Reset</button>
       </form>
+      <div id="selectedTags" class="selected-tags" aria-label="Selected tags"></div>
+      <p class="filter-hint">Combine tags: a job must match every selected tag. For example: No Experience Required + English Required + Part Time.</p>
       <div class="results-heading"><p id="resultCount" role="status" aria-live="polite">Loading opportunities…</p><span>Sorted by beginner signals</span></div>
+      <p class="evidence-hint">Select an underlined tag to read the advert text behind it.</p>
       <div id="jobList" aria-busy="true"><div class="state">Loading vacancies…</div></div>
     </section>
 
     <details class="methodology">
       <summary>How are jobs selected?</summary>
       <p>Local rules read Romanian, Russian and English vacancy text. Role titles and actual duties establish categories. Experience requirements, optional qualifications, student alternatives and work conditions are assessed separately.</p>
-      <p>Beginner matches have an explicit junior, internship, student or no-experience signal and verified vacancy text. Stretch roles ask for up to one year of experience. Unclear requirements, completed degrees and mixed seniority go to Needs checking. Required experience of two years or more, senior roles, unrelated work, unpaid programmes, mandatory relocation abroad, courses and advertised training fees are excluded.</p>
-      <p>These labels describe the advert; they are not a guarantee of suitability, payment or hiring. “Employer training” does not guarantee free training. No stated fee means no fee was found in the text; confirm pay and any training conditions with the employer. A flexible schedule or part-time work is tagged only when stated.</p>
+      <p>Beginner matches have an explicit junior, internship, student or no-experience signal and verified vacancy text. Stretch roles state an experience minimum below two years. Needs checking contains beginner adverts with specific questions about experience, degrees, internship pay or missing details. Other roles contains adverts without explicit beginner signals. Required experience of two years or more, senior roles, unrelated work, unpaid programmes, mandatory relocation abroad, courses and advertised training fees are excluded.</p>
+      <p>The student welcome badge is omitted when prior work experience is mentioned, including preferred experience. Optional experience remains optional when deciding beginner eligibility. Salary is shown when an amount is stated; other adverts show “Salary amount not stated”. Duplicate adverts share one card, chosen by verified details, the latest detail check and completeness, with every source linked.</p>
+      <p>Underlined tags and role labels show the original supporting sentence or source field. Evidence keeps the advert’s language and wording. A skill tag means the skill is mentioned; read the evidence to see whether it is required or preferred.</p>
+      <p>These labels describe the advert; they are not a guarantee of suitability, payment or hiring. Confirm pay and training conditions with the employer. A flexible schedule or part-time work is tagged only when stated.</p>
       <p id="exclusionCount"></p>
     </details>
   </main>
   <footer>FIRST STEP · CHIȘINĂU <span>Vacancies belong to their original publishers.</span></footer>
+  <script src="applicant-store.js" defer></script>
   <script src="app.js" defer></script>
 </body>
 </html>

@@ -1,59 +1,177 @@
-PS C:\Users\user\moldova-it-jobs> node purge-unwanted-jobs.js
-[PURGED] ID 1: "Internship IT" (LinkedIn)
-[PURGED] ID 2: "IT Product Manager Internship" (LinkedIn)
-[PURGED] ID 3: "Junior IT Product Manager (800 USD)" (LinkedIn)
-[PURGED] ID 4: "Junior IT Support Specialist (Help Desk și suport operațional)" (LinkedIn)
-[PURGED] ID 5: "IT Help Desk / IT Support Specialist (L1)" (LinkedIn)
-[PURGED] ID 6: "IT junior" (LinkedIn)
-[PURGED] ID 7: "Technical IT Support (Entry Level)" (LinkedIn)
-[PURGED] ID 15: "IT Support" (LinkedIn)
-[PURGED] ID 21: "Entry-Level IT Job (Training Provided)" (LinkedIn)
-[PURGED] ID 70: "Personal Travel Assistant" (LinkedIn)
-[PURGED] ID 71: "Customer Support Representative" (LinkedIn)
-[PURGED] ID 72: "Home Assistant / ESPHome / C++ Developer" (LinkedIn)
-[PURGED] ID 73: "Junior Recruiter Specialist" (LinkedIn)
-[PURGED] ID 74: "SEO specialist (junior) - intruire oferim" (LinkedIn)
-[PURGED] ID 75: "Asistent Proiecte Digitale (Web, SEO, AI)" (LinkedIn)
-[PURGED] ID 76: "Junior Digital Specialist (Marketing & E-commerce)" (LinkedIn)
-[PURGED] ID 77: "Asistent/ă Tehnic și de Marketing (WordPress & Content)" (LinkedIn)
-[PURGED] ID 78: "Asistent/ă Marketing Digital și Suport Web" (LinkedIn)
-[PURGED] ID 79: "Technical & Software Support Specialist (Remote)" (LinkedIn)
-[PURGED] ID 80: "CEO Assistant (1000 USD)" (LinkedIn)
-[PURGED] ID 81: "Junior Financial Manager (800 USD)" (LinkedIn)
-[PURGED] ID 82: "Junior Linux - Network Administrator (800 USD)" (LinkedIn)
-[PURGED] ID 83: "Junior PHP Developer (800 USD)" (LinkedIn)
-[PURGED] ID 84: "Support Engineer (Monitoring)" (LinkedIn)
-[PURGED] ID 85: "Junior Account Manager (800 USD)" (LinkedIn)
-[PURGED] ID 86: "Junior Litigation Paralegal (Evening Shift, 1200$+)" (LinkedIn)
-[PURGED] ID 87: "German speaking Customer Support Operator" (LinkedIn)
-[PURGED] ID 88: "Asistent Contabil" (LinkedIn)
-[PURGED] ID 89: "Customer Support Specialist" (LinkedIn)
-[PURGED] ID 90: "Junior Payment Specialist" (LinkedIn)
-[PURGED] ID 94: "Banking Junior Developer, Moldova" (Cedacri International)
-[PURGED] ID 95: "IT Internship" (Unifun)
-[PURGED] ID 96: "Junior PHP Developer" (Unifun)
-[PURGED] ID 97: "Junior IT Product Manager" (Unifun)
-[PURGED] ID 98: "Junior Java Developer" (FXBITS)
-[PURGED] ID 99: "IT Product Manager Internship" (Unifun)
-[PURGED] ID 100: "Support Engineer, Monitoring" (Unifun)
-[PURGED] ID 101: "Junior Linux - Network Administrator (800 USD)" (Unifun)
-[PURGED] ID 103: "Junior Data Scientist - Python Developer" (FXBITS)
-[PURGED] ID 104: "Billing Systems Support Engineer" (Top Angajator 2025)
-[PURGED] ID 105: "Junior IT Support Specialist (Help Desk și suport operațional)"(Top Angajator 2025)
-[PURGED] ID 111: "DevOps Engineer Junior, Secția Reţea și Echipamente, Departamentul Tehnologii Informaționale" (Top Angajator 2025)
-[PURGED] ID 124: "Specialist support IT / Специалист ИТ- поддержки" (Take IT)
-[PURGED] ID 125: "Support License Management Specialist (Moldova)" (Cedacri International)
-[PURGED] ID 126: "IT junior" (Easy Credit)
-[PURGED] ID 127: "Programator 1C (Junior / Middle)" (Sapico)
-[PURGED] ID 128: "C/C++, C#, Java, Python, Embedded, Web, Software, Full-Stack internship" (IAW/ICG Engineering)
-[PURGED] ID 129: "Junior Embedded Software Developer" (IAW/ICG Engineering)
-[PURGED] ID 130: "Junior QA Automation Python" (IAW/ICG Engineering)
-[PURGED] ID 131: "Junior C# Developer with onboarding in Germany followed by employment in Chisinau" (IAW/ICG Engineering)
-[PURGED] ID 132: "Junior Java Developer with onboarding in Germany followed by employment in Chisinau" (IAW/ICG Engineering)
-[PURGED] ID 133: "CRM Data Entry & Verification Specialist at Mental Health Company" (Joymind)
-[PURGED] ID 134: "Lector la „Junior STEP IT Academy”" (STEP IT Academy Moldova)
-[PURGED] ID 135: "Inbound Support Specialist" (Adtelligent Inc.)
-[PURGED] ID 139: "Junior Software Engineer" (Zentora Networks)
-[PURGED] ID 140: "Junior Software Engineer" (Zentora Networks)
+'Pay advertised · Negociabil' message (which comes from delucrumd I guess) should be transfered to current 'Pay advertised' (without a money number).
+'Pay not stated — confirm with the employer' should be transfered to 'Pay advertised' (without a money number).
+'Pay advertised' (without a money number) should be renamed to something like Pay sum is not stated.
+To conclude, we should simplificate and have only two: pay with number and without number
 
-Purge complete! Removed 56 unwanted listings from database.
+------
+
+I see 'No applicant training fee found in the advert' message everywhere so it doesnt make sense I guess. We need to merely remove it.
+
+
+--------
+'Students / Graduates Welcome' tag can be on posting like this where it is mentioned that 1 year experience required. I think we should remove this tag from this kind of postings even though they also mentioned students in requirments because work experience is more important:
+
+(
+DevOps Engineer Junior, Secția Reţea și Echipamente, Departamentul Tehnologii Informaționale
+OTP Bank S.A. · Chișinău · Full-time
+BEGINNER SIGNALS
+Systems & NetworksEnglish RequiredExperience PreferredGitJunior / Entry LevelLinuxPythonRomanian RequiredStudents / Graduates Welcome
+
+Pay not stated — confirm with the employer · No applicant training fee found in the advert
+Why this appears & vacancy details
+
+    The title advertises a junior, trainee or internship role.
+    Students or graduates are mentioned as applicants.
+
+DevOps Engineer Junior, Secția Reţea și Echipamente, Departamentul Tehnologii Informaționale
+
+Ce ai de făcut:
+Participarea la implementarea și administrarea soluțiilor IT.
+Suport în gestionarea și monitorizarea infrastructurii și serviciilor DevOps.
+Asistență în configurarea și menținerea proceselor CI/CD.
+Monitorizarea aplicațiilor și infrastructurii, identificarea și escaladarea incidentelor.
+Participarea la administrarea platformelor de containere și a mediilor de dezvoltare/testare.
+Suport în automatizarea proceselor prin scripturi și instrumente DevOps.
+Menținerea documentației tehnice actualizate.
+Colaborarea cu echipele de Dezvoltare, Infrastructură, Rețea și Securitate Informațională.
+Respectarea politicilor și procedurilor interne de securitate și conformitate
+Vom aprecia să ai:
+Studii superioare finalizate sau în curs de finalizare în domeniul Tehnologiilor Informaționale.
+Cunoștințe de bază privind sistemele de operare Linux.
+Cunoștințe introductive de scripting (Bash, PowerShell sau Python).
+Înțelegerea conceptelor de bază CI/CD.
+Cunoștințe introductive despre Docker și containere.
+Familiaritate cu Git și sistemele de versionare a codului.
+Cunoștințe de bază despre rețele și protocoale TCP/IP.
+Noțiuni de securitate informațională.
+Dorință de învățare și dezvoltare în domeniul DevOps și Cloud.
+Cunoașterea limbii române și engleze.
+Constituie un avantaj:
+Experiență de până la 1 an într-un rol IT (Administrare Sisteme, Suport Tehnic, DevOps, Dezvoltare Software).
+Cunoștințe de Docker, Kubernetes sau Rancher.
+Experiență cu Azure DevOps, GitLab CI/CD sau GitHub Actions.
+Experiență cu Ansible, Terraform sau alte soluții de automatizare.
+Cunoștințe despre platforme Cloud (Azure, AWS sau GCP).
+Certificări tehnice relevante sau cursuri finalizate în domeniul DevOps/Cloud.
+)
+
+-------
+
+There are several very similar postings that should be considered as duplicates and be removed. But I don't know what one should be considered as original that would remain, so you need to think.
+For example: (
+Support License Management Specialist (Moldova)
+Cedacri International · Chișinău · Full-time
+BEGINNER SIGNALS
+IT Support & HelpdeskExcel / SheetsItalian RequiredStudents / Graduates Welcome
+
+Pay not stated — confirm with the employer · No applicant training fee found in the advert
+Why this appears & vacancy details
+
+    Students or graduates are mentioned as applicants.
+
+Location: Chisinau
+Work Type: Full Time
+
+Job description
+
+About us:
+
+Cedacri International is part of ION Group, a community of visionary innovators, dedicated to providing pioneering software and consultancy services to financial institutions, trading firms, central banks, governments, and corporations around the world. We strive to simplify the way people work. We do that by providing workflow and process automation software, as well as providing real-time data and business intelligence to help people make better decisions. We are 13,000+ employees, 60+ global offices, and over 4,800+ customers worldwide.
+
+Your role:
+You will be part of the team that manages ION’s license key function, which is crucial in delivering ION solutions to our customers. As a member of the team, you will work internally with key stakeholders (sales, commercial, legal) to ensure correct and timely delivery of the license key, as well as helping to manage customer relationships through addressing and responding to customer queries.
+
+Your duties and responsibilities
+
+Analysis of contractual terms in respect of internal and external queries
+
+Critical thinking skills
+
+Attention to detail
+
+Strong analytical skills
+
+Self-motivated and hard-working individual who is goal orientated
+
+Intellectually curious
+
+Good interpersonal and communication
+
+Knowledge of Microsoft Office, particularly Excel
+
+Other duties
+
+We might ask you to perform other tasks and duties as your role expands
+
+Your skills, experience, and qualifications required: students in the last year of College, University,
+
+Faculty of Informatics or degree in computer science (engineering), numerical (mathematics and physics), Economics and other
+
+Written & verbal Italian skills (B2)
+
+Your skills, experience, and qualifications required
+Students in the last year of College, University, Faculty of Informatics, or degree in computer science (engineering), numerical (mathematics and physics), Economics.
+
+What we offer:
+Professional growth opportunities, continuous learning, working in a young and dynamic team and other.
+
+By submitting your application, you acknowledge and accept that Cedacri International SRL and its affiliated entities may process your personal data for recruitment, staffing, professional evaluation, and related operational activities in accordance with applicable data protection laws and internal group policies.
+
+Important notes:
+According to the Moldovan Law on Social Inclusion of People with Disabilities (no.60from30.03.2012) please note that candidates from the disability list will be given priority.
+
+Details checked 6 Oct 2026. Availability and terms may change.
+View on Delucru.md ↗
+)
+(
+Support License Management Specialist, Moldova, (Cedacri International)
+Cedacri International · Chișinău · Full-time
+BEGINNER SIGNALS
+
+IT Support & HelpdeskExcel / SheetsItalian RequiredStudents / Graduates Welcome
+
+Pay not stated — confirm with the employer · No applicant training fee found in the advert
+Why this appears & vacancy details
+
+    Students or graduates are mentioned as applicants.
+
+Support License Management Specialist, Moldova, (Cedacri International)
+
+Location: Chisinau
+Work Type: Full Time
+Job description
+About us:
+
+Cedacri International is part of ION Group, a community of visionary innovators, dedicated to providing pioneering software and consultancy services to financial institutions, trading firms, central banks, governments, and corporations around the world. We strive to simplify the way people work. We do that by providing workflow and process automation software, as well as providing real-time data and business intelligence to help people make better decisions. We are 13,000+ employees, 60+ global offices, and over 4,800+ customers worldwide.
+Your role:
+You will be part of the team that manages ION’s license key function, which is crucial in delivering ION solutions to our customers. As a member of the team, you will work internally with key stakeholders (sales, commercial, legal) to ensure correct and timely delivery of the license key, as well as helping to manage customer relationships through addressing and responding to customer queries.
+Your duties and responsibilities
+• Analysis of contractual terms in respect of internal and external queries
+• Critical thinking skills
+• Attention to detail
+• Strong analytical skills
+• Self-motivated and hard-working individual who is goal orientated
+• Intellectually curious
+• Good interpersonal and communication
+• Knowledge of Microsoft Office, particularly Excel
+Other duties
+• We might ask you to perform other tasks and duties as your role expands
+• Your skills, experience, and qualifications required: students in the last year of College, University,
+• Faculty of Informatics or degree in computer science (engineering), numerical (mathematics and physics), Economics and other
+• Written & verbal Italian skills (B2)
+Your skills, experience, and qualifications required
+Students in the last year of College, University, Faculty of Informatics, or degree in computer science (engineering), numerical (mathematics and physics), Economics.
+What we offer:
+Professional growth opportunities, continuous learning, working in a young and dynamic team and other.
+By submitting your application, you acknowledge and accept that Cedacri International SRL and its affiliated entities may process your personal data for recruitment, staffing, professional evaluation, and related operational activities in accordance with applicable data protection laws and internal group policies.
+Important notes:
+According to the Moldovan Law on Social Inclusion of People with Disabilities (no.60from30.03.2012) please note that candidates from the disability list will be given priority.
+
+Details checked 6 Oct 2026. Availability and terms may change.
+View on Lucru.md ↗
+)
+
+
+----------
+
+Very many 'needs checking' postings. We should think what to do with it.

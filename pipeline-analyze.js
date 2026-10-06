@@ -12,9 +12,10 @@ function runAnalysisPipeline(database = db, { onlyPending = false, quiet = false
     exposure_score = @exposureScore, category = @category, tags = @tags,
     quality_flags = @qualityFlags, entry_fit = @entryFit, fit_score = @fitScore,
     experience_min = @experienceMin, payment_status = @paymentStatus, reasons = @reasons,
+    tag_evidence = @tagEvidence, flag_evidence = @flagEvidence, category_evidence = @categoryEvidence,
     exclusion_reason = @exclusionReason, status = @status, location = @location,
     analyzed_at = @now, analysis_version = @version WHERE id = @id`);
-  const counts = { beginner: 0, stretch: 0, review: 0, excluded: 0 };
+  const counts = { beginner: 0, stretch: 0, review: 0, other: 0, excluded: 0 };
   const start = Date.now();
   database.transaction(() => {
     for (const job of jobs) {

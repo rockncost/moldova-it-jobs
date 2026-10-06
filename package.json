@@ -6,6 +6,8 @@
   "scripts": {
     "start": "concurrently \"node server.js\" \"node cron.js\"",
     "test": "node --test tests/*.test.js",
+    "audit": "node scripts/audit-classification.js",
+    "audit:coverage": "node scripts/audit-coverage.js",
     "analyze": "node pipeline-analyze.js",
     "refresh": "node refresh-jobs.js",
     "serve": "node server.js"
